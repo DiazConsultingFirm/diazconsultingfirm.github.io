@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diaz Consulting Firm — AI Systems for Growing Businesses</title>
-  <meta name="description" content="We build AI-powered lead generation systems, automations, and web platforms that help SMBs grow without growing their overhead. Book a free discovery call." />
+  <meta name="description" content="We build AI-powered lead generation systems, automations, and web platforms that help SMBs grow without growing their overhead." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
@@ -12,140 +12,148 @@
 </head>
 <body>
 
-  <!-- ===== NAV ===== -->
-  <header class="nav-wrapper">
+  <!-- NAV -->
+  <header class="nav-wrapper" id="nav">
     <nav class="nav container">
       <a href="#" class="logo">
-        <span class="logo-d">D</span><span class="logo-cf">CF</span>
-        <span class="logo-text">Diaz Consulting</span>
+        <span class="logo-mark">DCF</span>
+        <span class="logo-pipe"></span>
+        <span class="logo-name">Diaz Consulting</span>
       </a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
-        <li><a href="#results">Results</a></li>
+        <li><a href="#work">Our Work</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="nav-cta">Book a Call</a></li>
+        <li><a href="#contact" class="nav-cta">Book a Call <span class="nav-cta-arrow">→</span></a></li>
       </ul>
-      <button class="mobile-menu-btn" aria-label="Open menu">
+      <button class="burger" aria-label="Menu" id="burger">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero-bg"></div>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-img" style="background-image:url('img/hero-bg.webp')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-noise"></div>
     <div class="container hero-inner">
-      <div class="hero-badge">AI Automation · Lead Generation · Web Systems</div>
-      <h1 class="hero-headline">
-        Your business deserves<br />
-        <em>systems that work</em><br />
-        while you do.
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        AI Automation · Lead Generation · Web Systems
+      </div>
+      <h1 class="hero-h1">
+        Your business deserves<br>
+        <em>systems that work</em><br>
+        <span class="h1-sub">while you do.</span>
       </h1>
-      <p class="hero-sub">
+      <p class="hero-lead">
         We build AI-powered engines — lead generation, automation workflows, and high-converting websites — so SMBs grow revenue without growing overhead.
       </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-gold">Book a Free Discovery Call</a>
-        <a href="#results" class="btn btn-ghost">See Our Results</a>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn--gold">Book a Free Discovery Call <span>→</span></a>
+        <a href="#work" class="btn btn--glass">See Our Work</a>
       </div>
-      <div class="hero-proof">
-        <div class="proof-item">
-          <span class="proof-number">2</span>
-          <span class="proof-label">Live Client Sites</span>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-num" data-target="2">0</div>
+          <div class="hstat-label">Live Client Sites</div>
         </div>
-        <div class="proof-divider"></div>
-        <div class="proof-item">
-          <span class="proof-number">10</span>
-          <span class="proof-label">Practice Areas Live</span>
+        <div class="hstat-rule"></div>
+        <div class="hstat">
+          <div class="hstat-num" data-target="10">0</div>
+          <div class="hstat-label">Practice Areas Live</div>
         </div>
-        <div class="proof-divider"></div>
-        <div class="proof-item">
-          <span class="proof-number">3</span>
-          <span class="proof-label">Counties Covered</span>
+        <div class="hstat-rule"></div>
+        <div class="hstat">
+          <div class="hstat-num">3-County</div>
+          <div class="hstat-label">South Florida Coverage</div>
         </div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>Scroll</span>
     </div>
   </section>
 
-  <!-- ===== PROBLEM / HOOK ===== -->
+  <!-- HOOK -->
   <section class="hook">
-    <div class="container">
-      <div class="hook-grid">
-        <div class="hook-copy">
-          <h2>Your competitors are already using AI.<br /><span class="gold">Are you?</span></h2>
-          <p>Most small businesses still rely on word-of-mouth, manual follow-ups, and websites that don't convert. Meanwhile, AI-powered businesses are automating lead capture, booking, and client communication — at a fraction of what hiring would cost.</p>
-          <p>We close that gap. Fast.</p>
+    <div class="container hook-inner">
+      <div class="hook-copy">
+        <div class="section-pill">The Problem</div>
+        <h2>Your competitors are already using AI.<br><em class="gold">Are you?</em></h2>
+        <p>Most small businesses still rely on word-of-mouth, manual follow-ups, and websites that don't convert. Meanwhile, AI-powered businesses are automating lead capture, booking, and client communication — at a fraction of what hiring would cost.</p>
+        <p class="hook-closer"><strong>We close that gap. Fast.</strong></p>
+      </div>
+      <div class="hook-stats">
+        <div class="gstat">
+          <div class="gstat-num">73%</div>
+          <div class="gstat-text">of SMB leads lost due to slow follow-up</div>
         </div>
-        <div class="hook-stats">
-          <div class="stat-card">
-            <div class="stat-num">73%</div>
-            <div class="stat-label">of SMB leads are lost due to slow follow-up</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">5×</div>
-            <div class="stat-label">higher conversion when leads are contacted within 5 minutes</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">$0</div>
-            <div class="stat-label">additional headcount needed with the right automation stack</div>
-          </div>
+        <div class="gstat">
+          <div class="gstat-num">5×</div>
+          <div class="gstat-text">higher conversion when contacted in under 5 minutes</div>
+        </div>
+        <div class="gstat">
+          <div class="gstat-num">$0</div>
+          <div class="gstat-text">additional headcount with the right automation stack</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICES ===== -->
+  <!-- SERVICES -->
   <section class="services" id="services">
+    <div class="services-bg" style="background-image:url('img/grid-bg.webp')"></div>
+    <div class="services-bg-overlay"></div>
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">What We Build</div>
-        <h2>End-to-end systems,<br />not just deliverables.</h2>
-        <p>We don't hand you a website and walk away. Every engagement is built around a system — one that captures leads, nurtures them, and converts them, automatically.</p>
+        <div class="section-pill section-pill--gold">What We Build</div>
+        <h2>End-to-end systems,<br>not just deliverables.</h2>
+        <p>Every engagement is built around a system that captures leads, nurtures them, and converts them — automatically.</p>
       </div>
       <div class="services-grid">
-        <div class="service-card service-card--featured">
-          <div class="service-icon">⚡</div>
+        <div class="scard scard--hero">
+          <div class="scard-icon">⚡</div>
+          <div class="scard-badge">Most Popular</div>
           <h3>AI Lead Generation System</h3>
-          <p>Automated lead capture, instant follow-up sequences, and CRM integration — so no lead slips through the cracks, even when you're off the clock.</p>
-          <ul class="service-list">
+          <p>Automated lead capture, instant follow-up sequences, and CRM integration. No lead slips through — even when you're off the clock.</p>
+          <ul class="scard-list">
             <li>Lead capture forms + landing pages</li>
             <li>Zapier / Make automation workflows</li>
             <li>Instant SMS &amp; email follow-up</li>
             <li>CRM sync and pipeline tracking</li>
           </ul>
-          <div class="service-tag">Most Popular</div>
+          <div class="scard-glow"></div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🌐</div>
+        <div class="scard">
+          <div class="scard-icon">🌐</div>
           <h3>High-Converting Web Platform</h3>
           <p>Professionally designed, fast-loading websites built to rank and convert — not just look good. Every page has a job.</p>
-          <ul class="service-list">
+          <ul class="scard-list">
             <li>SEO-structured site architecture</li>
             <li>Mobile-first responsive design</li>
             <li>Online booking &amp; contact integration</li>
             <li>ADA compliant &amp; speed optimized</li>
           </ul>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🔄</div>
+        <div class="scard">
+          <div class="scard-icon">🔄</div>
           <h3>Business Automation Stack</h3>
-          <p>Map your manual processes and rebuild them as automated workflows — from client onboarding to invoicing to appointment reminders.</p>
-          <ul class="service-list">
+          <p>Map your manual processes and rebuild them as automated workflows — from onboarding to invoicing to appointment reminders.</p>
+          <ul class="scard-list">
             <li>Workflow audit &amp; mapping</li>
             <li>No-code automation build-out</li>
             <li>Calendar &amp; booking automation</li>
             <li>Reporting &amp; analytics setup</li>
           </ul>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🤖</div>
+        <div class="scard">
+          <div class="scard-icon">🤖</div>
           <h3>AI Content &amp; Outreach Engine</h3>
-          <p>Consistent, on-brand content and outreach at scale — without hiring a marketing team. AI-assisted, human-reviewed, always on-message.</p>
-          <ul class="service-list">
+          <p>Consistent, on-brand content and outreach at scale — without hiring a marketing team. AI-assisted, human-reviewed.</p>
+          <ul class="scard-list">
             <li>Social content calendar &amp; templates</li>
             <li>Automated email sequences</li>
             <li>AI-assisted blog &amp; SEO content</li>
@@ -156,244 +164,256 @@
     </div>
   </section>
 
-  <!-- ===== HOW WE WORK ===== -->
-  <section class="process">
-    <div class="container">
-      <div class="section-header section-header--light">
-        <div class="section-tag section-tag--gold">How It Works</div>
-        <h2>From first call to<br />live system in weeks.</h2>
-      </div>
-      <div class="process-steps">
-        <div class="process-step">
-          <div class="step-num">01</div>
-          <div class="step-content">
-            <h4>Discovery Call</h4>
-            <p>We learn your business, your bottlenecks, and your goals. No pitch deck — just a real conversation.</p>
-          </div>
-        </div>
-        <div class="process-connector"></div>
-        <div class="process-step">
-          <div class="step-num">02</div>
-          <div class="step-content">
-            <h4>System Blueprint</h4>
-            <p>We map exactly what to build and why — so you know what you're getting before we start.</p>
-          </div>
-        </div>
-        <div class="process-connector"></div>
-        <div class="process-step">
-          <div class="step-num">03</div>
-          <div class="step-content">
-            <h4>Build &amp; Launch</h4>
-            <p>We build your system, test every workflow, and launch — with zero guesswork on your end.</p>
-          </div>
-        </div>
-        <div class="process-connector"></div>
-        <div class="process-step">
-          <div class="step-num">04</div>
-          <div class="step-content">
-            <h4>Optimize &amp; Scale</h4>
-            <p>We monitor performance and keep improving — your system gets smarter over time.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RESULTS / CASE STUDIES ===== -->
-  <section class="results" id="results">
+  <!-- CLIENT WORK — DisplayCards -->
+  <section class="work" id="work">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">Case Studies</div>
-        <h2>Real systems.<br />Real results.</h2>
-        <p>We don't just build — we deliver measurable outcomes. Here's what that looks like for our clients.</p>
+        <div class="section-pill">Case Studies</div>
+        <h2>Real systems.<br>Real results.</h2>
+        <p>Hover each card to see the full story. These are live systems generating leads for clients today.</p>
       </div>
-      <div class="case-studies">
-
-        <div class="case-study">
-          <div class="case-meta">
-            <span class="case-industry">Criminal Defense Law</span>
-            <span class="case-status case-status--live">● Live</span>
-          </div>
-          <h3 class="case-title">Robert Davis P.A.</h3>
-          <p class="case-desc">South Florida criminal defense attorney needed a high-converting web presence and automated lead system to compete against established firms across Broward, Miami-Dade, and Palm Beach counties.</p>
-          <div class="case-results-grid">
-            <div class="case-result">
-              <div class="case-result-num">10</div>
-              <div class="case-result-label">Practice area pages live</div>
+      <div class="work-stage">
+        <!-- DisplayCards stacked component -->
+        <div class="display-cards" id="displayCards">
+          <div class="display-card dc-1" data-client="robert">
+            <div class="dc-top">
+              <span class="dc-icon-wrap"><span class="dc-icon">⚖️</span></span>
+              <span class="dc-title">Robert Davis P.A.</span>
             </div>
-            <div class="case-result">
-              <div class="case-result-num">3</div>
-              <div class="case-result-label">Counties covered (Broward · Miami-Dade · Palm Beach)</div>
+            <div class="dc-desc">10 practice areas · South Florida</div>
+            <div class="dc-meta">
+              <span class="dc-tag dc-tag--live">● Live</span>
+              <span class="dc-date">robertdavispa.com</span>
             </div>
-            <div class="case-result">
-              <div class="case-result-num">24/7</div>
-              <div class="case-result-label">Automated lead capture via Zapier</div>
+            <div class="dc-overlay"></div>
+          </div>
+          <div class="display-card dc-2" data-client="gerlach">
+            <div class="dc-top">
+              <span class="dc-icon-wrap dc-icon-wrap--purple"><span class="dc-icon">⚖️</span></span>
+              <span class="dc-title dc-title--purple">Gerlach Legal</span>
+            </div>
+            <div class="dc-desc">Bilingual EN/ES · Family &amp; Immigration</div>
+            <div class="dc-meta">
+              <span class="dc-tag dc-tag--pending">◐ Launching Soon</span>
+              <span class="dc-date">gerlachlegal.com</span>
+            </div>
+            <div class="dc-overlay"></div>
+          </div>
+          <div class="display-card dc-3" data-client="next">
+            <div class="dc-top">
+              <span class="dc-icon-wrap dc-icon-wrap--gold"><span class="dc-icon">✦</span></span>
+              <span class="dc-title dc-title--gold">Your Business</span>
+            </div>
+            <div class="dc-desc">AI system built for your market</div>
+            <div class="dc-meta">
+              <span class="dc-tag dc-tag--open">◌ Spot Available</span>
+              <span class="dc-date">Book a call →</span>
             </div>
           </div>
-          <div class="case-stack">
-            <span>Netlify</span><span>Zapier</span><span>SEO Schema</span><span>ADA Compliant</span>
-          </div>
-          <a href="https://robertdavispa.com" target="_blank" rel="noopener" class="case-link">View Live Site →</a>
         </div>
 
-        <div class="case-study">
-          <div class="case-meta">
-            <span class="case-industry">Family &amp; Immigration Law</span>
-            <span class="case-status case-status--pending">◐ Launching Soon</span>
+        <!-- Case study detail panels -->
+        <div class="cs-panel" id="cs-robert">
+          <div class="cs-label">Criminal Defense · Wilton Manors, FL</div>
+          <h3>Robert Davis P.A.</h3>
+          <p>South Florida criminal defense attorney needed a high-converting web presence and automated lead system to compete across three counties.</p>
+          <div class="cs-metrics">
+            <div class="cs-metric"><span class="cs-num">10</span><span class="cs-ml">Practice pages live</span></div>
+            <div class="cs-metric"><span class="cs-num">3</span><span class="cs-ml">Counties covered</span></div>
+            <div class="cs-metric"><span class="cs-num">24/7</span><span class="cs-ml">Automated leads</span></div>
           </div>
-          <h3 class="case-title">Gerlach Legal</h3>
-          <p class="case-desc">Bilingual family and immigration law firm needed a modern site that could speak to both English and Spanish-speaking clients, with built-in booking and intake automation.</p>
-          <div class="case-results-grid">
-            <div class="case-result">
-              <div class="case-result-num">2</div>
-              <div class="case-result-label">Languages served</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">100%</div>
-              <div class="case-result-label">Mobile responsive</div>
-            </div>
-            <div class="case-result">
-              <div class="case-result-num">v7</div>
-              <div class="case-result-label">Iterations to perfection</div>
-            </div>
+          <div class="cs-stack">
+            <span>Netlify</span><span>Zapier</span><span>SEO Schema</span><span>ADA</span>
           </div>
-          <div class="case-stack">
-            <span>Netlify</span><span>Cal.com</span><span>Bilingual UX</span><span>ADA Compliant</span>
-          </div>
-          <span class="case-link case-link--muted">Site launching summer 2026</span>
+          <a href="https://robertdavispa.com" target="_blank" rel="noopener" class="cs-link">View Live Site →</a>
         </div>
-
+        <div class="cs-panel cs-panel--hidden" id="cs-gerlach">
+          <div class="cs-label">Family &amp; Immigration Law · Bilingual</div>
+          <h3>Gerlach Legal</h3>
+          <p>Bilingual family and immigration law firm serving English and Spanish-speaking clients with automated booking and intake.</p>
+          <div class="cs-metrics">
+            <div class="cs-metric"><span class="cs-num">2</span><span class="cs-ml">Languages served</span></div>
+            <div class="cs-metric"><span class="cs-num">v7</span><span class="cs-ml">Iterations built</span></div>
+            <div class="cs-metric"><span class="cs-num">100%</span><span class="cs-ml">Mobile responsive</span></div>
+          </div>
+          <div class="cs-stack">
+            <span>Netlify</span><span>Cal.com</span><span>Bilingual UX</span><span>ADA</span>
+          </div>
+          <span class="cs-link cs-link--muted">Launching Summer 2026</span>
+        </div>
+        <div class="cs-panel cs-panel--hidden" id="cs-next">
+          <div class="cs-label">Your Industry · Your Market</div>
+          <h3>Your Business Next</h3>
+          <p>Every system we build is custom. We learn your business, map your bottlenecks, and build the exact system to close the gap.</p>
+          <div class="cs-metrics">
+            <div class="cs-metric"><span class="cs-num">Free</span><span class="cs-ml">Discovery call</span></div>
+            <div class="cs-metric"><span class="cs-num">Weeks</span><span class="cs-ml">Not months</span></div>
+            <div class="cs-metric"><span class="cs-num">ROI</span><span class="cs-ml">Guaranteed focus</span></div>
+          </div>
+          <div class="cs-stack"><span>Custom Stack</span><span>AI-Powered</span><span>Results-First</span></div>
+          <a href="#contact" class="cs-link">Book a Discovery Call →</a>
+        </div>
       </div>
 
-      <div class="testimonial-block">
-        <div class="quote-mark">"</div>
-        <blockquote>Evans built the entire system — website, lead capture, automated follow-up — and deployed it in weeks. The level of professionalism and AI integration was well beyond what I expected for the investment.</blockquote>
-        <div class="testimonial-attr">
-          <div class="attr-avatar">RD</div>
+      <!-- Testimonial -->
+      <div class="testimonial">
+        <div class="testimonial-quote">"</div>
+        <blockquote>Evans built the entire system — website, automated lead capture, and follow-up workflows — and had it live in weeks. The level of AI integration was well beyond what I expected.</blockquote>
+        <div class="testimonial-who">
+          <div class="tw-avatar">RD</div>
           <div>
-            <div class="attr-name">Robert Davis</div>
-            <div class="attr-title">Attorney at Law · Robert Davis P.A.</div>
+            <div class="tw-name">Robert Davis</div>
+            <div class="tw-title">Attorney at Law · Robert Davis P.A. · Wilton Manors, FL</div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="process-bg" style="background-image:url('img/grid-bg.webp')"></div>
+    <div class="process-overlay"></div>
+    <div class="container">
+      <div class="section-header section-header--light">
+        <div class="section-pill section-pill--gold">How It Works</div>
+        <h2>From first call to<br>live system in weeks.</h2>
+      </div>
+      <div class="process-track">
+        <div class="pstep">
+          <div class="pstep-num">01</div>
+          <div class="pstep-line"></div>
+          <h4>Discovery Call</h4>
+          <p>We learn your business, bottlenecks, and goals. No pitch deck — just a real conversation.</p>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">02</div>
+          <div class="pstep-line"></div>
+          <h4>System Blueprint</h4>
+          <p>We map exactly what to build and why — so you know what you're getting before we start.</p>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">03</div>
+          <div class="pstep-line"></div>
+          <h4>Build &amp; Launch</h4>
+          <p>We build your system, test every workflow, and launch — zero guesswork on your end.</p>
+        </div>
+        <div class="pstep">
+          <div class="pstep-num">04</div>
+          <div class="pstep-line"></div>
+          <h4>Optimize &amp; Scale</h4>
+          <p>We monitor performance and keep improving — your system gets smarter over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
   <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual">
-          <div class="about-img-frame">
-            <div class="about-initials">ED</div>
-            <div class="about-img-accent"></div>
-          </div>
-          <div class="about-credentials">
-            <div class="credential">
-              <span class="cred-icon">⚡</span>
-              <span>Led 6 BDMs to $322K+ team quota at Magic.com — promoted to Sales Manager in 9 months</span>
-            </div>
-            <div class="credential">
-              <span class="cred-icon">🤖</span>
-              <span>AI systems architect — lead gen, automation, and web platforms since 2024</span>
-            </div>
-            <div class="credential">
-              <span class="cred-icon">🌐</span>
-              <span>Bilingual EN/ES · 100% remote delivery</span>
-            </div>
-          </div>
+    <div class="container about-inner">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <img src="img/ai-brain.webp" alt="AI network visualization" class="about-img" />
+          <div class="about-img-frame"></div>
         </div>
-        <div class="about-copy">
-          <div class="section-tag">About DCF</div>
-          <h2>Built by someone who knows what it costs to miss a lead.</h2>
-          <p>I'm Evans Diaz, founder of Diaz Consulting Firm. I spent years in B2B sales — closing enterprise deals, leading BDM teams at Magic.com, hitting $322K+ in team quota — before I turned those same systems toward small businesses.</p>
-          <p>Most SMBs are leaving money on the table — not because they're bad at their work, but because they don't have the infrastructure to capture and convert the demand that's already there. That's the gap DCF closes: real AI systems, real automation, real results.</p>
-          <p>I'm bilingual (EN/ES), 100% remote, and I treat every client's business like it's mine. Because the systems I build, I'd stake my own revenue on.</p>
-          <a href="#contact" class="btn btn-navy">Work With Me</a>
+        <div class="about-creds">
+          <div class="acred"><span class="acred-dot"></span>Led 6 BDMs to $322K+ team quota at Magic.com</div>
+          <div class="acred"><span class="acred-dot"></span>Promoted to Sales Manager in 9 months</div>
+          <div class="acred"><span class="acred-dot"></span>AI systems architect since 2024</div>
+          <div class="acred"><span class="acred-dot"></span>Bilingual EN/ES · 100% remote delivery</div>
         </div>
+      </div>
+      <div class="about-copy">
+        <div class="section-pill">About Evans Diaz</div>
+        <h2>Built by someone who knows what it costs to miss a lead.</h2>
+        <p>I'm Evans Diaz, founder of Diaz Consulting Firm. I spent years in B2B sales — closing enterprise deals, leading BDM teams at Magic.com, hitting $322K+ in team quota — before I turned those same systems toward small businesses.</p>
+        <p>Most SMBs are leaving money on the table — not because they're bad at their work, but because they don't have the infrastructure to capture and convert the demand that's already there. That's the gap DCF closes.</p>
+        <p>I'm bilingual (EN/ES), 100% remote, and I treat every client's business like it's mine. Because the systems I build, I'd stake my own revenue on.</p>
+        <a href="#contact" class="btn btn--navy">Work With Me →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA / CONTACT ===== -->
+  <!-- CONTACT / CTA -->
   <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-inner">
-        <div class="contact-copy">
-          <div class="section-tag section-tag--gold">Let's Talk</div>
-          <h2>Ready to build a system that works for you?</h2>
-          <p>Book a free 30-minute discovery call. No pitch, no pressure — just a straight conversation about what you need and whether we're the right fit.</p>
-          <ul class="contact-promises">
-            <li>✓ Free 30-minute discovery call</li>
-            <li>✓ Custom system blueprint, no charge</li>
-            <li>✓ No contracts until you're ready</li>
-            <li>✓ Results-focused engagement</li>
-          </ul>
-        </div>
-        <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
-            </div>
-            <div class="form-group">
-              <label for="business">Business Type</label>
-              <select id="business" name="business">
-                <option value="">Select your industry</option>
-                <option>Law Firm / Legal Services</option>
-                <option>Healthcare / Medical</option>
-                <option>Home Services / Contractor</option>
-                <option>Real Estate</option>
-                <option>Retail / E-commerce</option>
-                <option>Professional Services</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="goal">What's your biggest bottleneck right now?</label>
-              <textarea id="goal" name="goal" rows="3" placeholder="e.g., We lose leads because we can't follow up fast enough..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-gold btn-full">Book My Free Call →</button>
-            <p class="form-note">Or email us directly: <a href="mailto:diaz.diazconsultingfirm@gmail.com">diaz.diazconsultingfirm@gmail.com</a></p>
-          </form>
-        </div>
+    <div class="contact-bg" style="background-image:url('img/hero-bg.webp')"></div>
+    <div class="contact-overlay"></div>
+    <div class="container contact-inner">
+      <div class="contact-copy">
+        <div class="section-pill section-pill--gold">Let's Talk</div>
+        <h2>Ready to build a system that works for you?</h2>
+        <p>Book a free 30-minute discovery call. No pitch, no pressure — just a straight conversation about what you need and whether we're the right fit.</p>
+        <ul class="contact-promises">
+          <li><span class="cp-check">✓</span> Free 30-minute discovery call</li>
+          <li><span class="cp-check">✓</span> Custom system blueprint, no charge</li>
+          <li><span class="cp-check">✓</span> No contracts until you're ready</li>
+          <li><span class="cp-check">✓</span> Results-focused, plain-language scope</li>
+        </ul>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="fg">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="fg">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
+          </div>
+          <div class="fg">
+            <label for="business">Business Type</label>
+            <select id="business" name="business">
+              <option value="">Select your industry</option>
+              <option>Law Firm / Legal Services</option>
+              <option>Healthcare / Medical</option>
+              <option>Home Services / Contractor</option>
+              <option>Real Estate</option>
+              <option>Retail / E-commerce</option>
+              <option>Professional Services</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="goal">Biggest bottleneck right now?</label>
+            <textarea id="goal" name="goal" rows="3" placeholder="e.g., We lose leads because we can't follow up fast enough..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Book My Free Call →</button>
+          <p class="form-note">Or email: <a href="mailto:diaz.diazconsultingfirm@gmail.com">diaz.diazconsultingfirm@gmail.com</a></p>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo">
-          <span class="logo-d">D</span><span class="logo-cf">CF</span>
-          <span class="logo-text">Diaz Consulting</span>
-        </a>
-        <p>AI systems for growing businesses.<br />Built to work while you do.</p>
+        <div class="logo">
+          <span class="logo-mark">DCF</span>
+          <span class="logo-pipe"></span>
+          <span class="logo-name">Diaz Consulting</span>
+        </div>
+        <p>AI systems for growing businesses.<br>Built to work while you do.</p>
       </div>
       <div class="footer-links">
-        <div class="footer-col">
-          <div class="footer-col-title">Services</div>
+        <div class="fl-col">
+          <div class="fl-head">Services</div>
           <a href="#services">AI Lead Generation</a>
           <a href="#services">Web Platforms</a>
           <a href="#services">Business Automation</a>
           <a href="#services">Content Engine</a>
         </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Company</div>
-          <a href="#results">Case Studies</a>
+        <div class="fl-col">
+          <div class="fl-head">Company</div>
+          <a href="#work">Case Studies</a>
           <a href="#about">About Evans</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Book a Call</a>
+          <a href="mailto:diaz.diazconsultingfirm@gmail.com">Contact</a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
+    <div class="footer-bar">
+      <div class="container footer-bar-inner">
         <span>© 2026 Diaz Consulting Firm. All rights reserved.</span>
         <span>Built with AI. Powered by results.</span>
       </div>
